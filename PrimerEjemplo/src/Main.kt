@@ -1,8 +1,9 @@
 fun main(){
 
-    operadores()
+    //operadores()
     //square(2)
     //parametrosNombrados()
+    cuando()
 }
 
 fun operadores(){
@@ -87,4 +88,17 @@ fun parametrosNombrados(){
     //Funcion parámetros nombrados
     val sum = suma(a=12, b=27)
     println(sum)
+}
+
+fun cuando(){
+    val a = 5
+    when{
+        a > 0 ->{
+            print("Es positivo")
+            println("Prueba")
+            val c = 0
+            println(c)
+        }a==0 -> print("Es cero")
+        else -> print("Es negativo")
+    }
 }
