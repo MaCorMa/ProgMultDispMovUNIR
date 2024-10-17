@@ -53,7 +53,7 @@ class CuentaBancaria(val iban:String, val titular: String) {
         this.idMovimiento++
     }
 
-    fun IngresarDinero(cantidad : Double){
+    fun ingresarDinero(cantidad : Double){
         if(cantidad>0.0){
             this.saldo += cantidad
             registrarMovimiento(cantidad, "Ingreso")
@@ -71,6 +71,11 @@ class CuentaBancaria(val iban:String, val titular: String) {
         else{
             this.movimientos.forEach{println(it)}
         }
+    }
+
+    //ver datos de la cuenta
+    fun obtenerDatosCuenta(): String{
+        return "Datos de la cuenta: IBAN ${this.iban} Titular: ${this.titular} Saldo: ${this.saldo}"
     }
 
 
