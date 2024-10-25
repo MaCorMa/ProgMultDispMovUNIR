@@ -4,7 +4,7 @@ class Cliente : Persona{ // : actua como el extends en Java
 
     }
 
-    override fun registrarCenso(localidad:String, empresa:String){
-        
+    override fun registrarCenso(localidad: String) {
+        println("Te han censado en la {$localidad} como cliente")
     }
 }
