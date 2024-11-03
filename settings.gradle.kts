@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Clase1"
 include(":app")
+include(":app")
+ 

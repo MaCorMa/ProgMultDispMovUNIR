@@ -32,4 +32,25 @@ class Inventario {
             }
         }
     }
+
+    fun insertarAnimales(animal : Mascota){
+        this.animales.add(animal)
+        println("${animal.nombre} ha sido insertado en el inventario")
+    }
+
+    fun eliminarAnimales(nombre : String){
+        val animal = animales.find { it.nombre==nombre }
+        if (animal != null){
+            this.animales.remove(animal)
+            println("${animal.nombre} ha sido eliminado del inventario")
+        }  else {
+                println("No se encuentra al animal")
+        }
+    }
+
+    fun vaciarInventario(){
+
+        this.animales.clear()
+        println("Se han borrado todos los animales del inventario")
+    }
 }

@@ -11,15 +11,16 @@
     <TextView
         android:layout_width="93dp"
         android:layout_height="22dp"
+        android:layout_marginBottom="50sp"
+        android:background="@color/white"
         android:text="@string/hola_pmdm"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.286"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.447"
-        android:background="@color/white"
-        android:textStyle="bold"
-        android:layout_marginBottom="50sp"/>
+        app:layout_constraintVertical_bias="0.327" />
 
     <Button
         android:layout_width="match_parent"
