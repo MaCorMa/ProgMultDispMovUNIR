@@ -1,6 +1,8 @@
 package com.example.tema3
 
 import android.os.Bundle
+import android.util.Log
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,6 +18,17 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.loginButton)
+            .setOnClickListener{
+                val usuario = findViewById<EditText>(R.id.emailHint)
+                val password = findViewById<EditText>(R.id.passwordHint)
+
+                if(usuario.text.isNotEmpty()&& password.text.isNotEmpty()){
+                    Log.i("Login", usuario.text.toString())
+                    Log.i("Login", password.text.toString())
+                }
+
         }
     }
 }

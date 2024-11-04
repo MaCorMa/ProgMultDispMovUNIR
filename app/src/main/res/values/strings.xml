@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Clase1</string>
     <string name="hola_pmdm">HOLA PMDM!</string>
+    <string name="log_in">LOG IN</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="introduzca_su_e_mail">Introduzca su e-mail</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="introduzca_su_contrase_a">Introduzca su contraseña</string>
 </resources>
