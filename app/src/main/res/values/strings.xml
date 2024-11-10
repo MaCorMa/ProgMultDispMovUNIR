@@ -6,4 +6,5 @@
     <string name="introduzca_su_e_mail">Introduzca su e-mail</string>
     <string name="contrase_a">Contraseña</string>
     <string name="introduzca_su_contrase_a">Introduzca su contraseña</string>
+    <string name="se_ha_logueado_correctamente">Se ha logueado correctamente</string>
 </resources>
