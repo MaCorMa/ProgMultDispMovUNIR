@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IMC App</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="altura">Altura</string>
+    <string name="_120_cm">120 cm</string>
+    <string name="peso">Peso</string>
+    <string name="_77">77</string>
+    <string name="Edad">Edad</string>
+    <string name="calcular_imc">Calcular IMC</string>
+</resources>
