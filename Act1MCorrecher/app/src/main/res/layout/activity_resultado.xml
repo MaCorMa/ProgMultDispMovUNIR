@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Resultados"
     android:background="@color/bg"
     android:paddingVertical="64dp"
     android:paddingHorizontal="32dp">
@@ -14,7 +17,8 @@
         app:cardBackgroundColor="@color/icono"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,13 +56,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/txtequivalente_a"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>/>
+                android:layout_marginBottom="10dp"/>
             <TextView
                 android:id="@+id/resultado_netoAnual"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/netoanual" />/>
+                android:text="@string/netoanual" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -105,13 +109,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/txtcuotas_a_la_ss_anuales"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>/>
+                android:layout_marginBottom="10dp"/>
             <TextView
                 android:id="@+id/resultado_SS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/ssanual" />/>
+                android:text="@string/ssanual" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -127,6 +131,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".95"/>
+        app:layout_constraintVertical_bias=".98"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

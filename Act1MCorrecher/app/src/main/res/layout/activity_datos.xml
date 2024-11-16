@@ -57,7 +57,7 @@
                 android:gravity="center"/>
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="20dp">
                 <!--bruto-->
@@ -75,6 +75,7 @@
                             android:text="@string/sueldo_bruto_anual"
                             android:textSize="14sp"/>
                         <EditText
+                            android:id="@+id/brutoAnual"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:hint="@string/hintbruto" />
@@ -107,7 +108,7 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="20dp">
                 <!--Edad-->
@@ -125,6 +126,7 @@
                             android:text="@string/edad"
                             android:textSize="14sp"/>
                         <EditText
+                            android:id="@+id/edad"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:hint="@string/_20" />
@@ -143,7 +145,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
-                            android:text="Grupo Profesional"
+                            android:text="@string/txtgrupo_profesional"
                             android:textSize="14sp"/>
                         <Spinner
                             android:id="@+id/spGrupoProf"
@@ -156,7 +158,7 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="20dp">
                 <!--Grado discapacidad-->
@@ -226,8 +228,9 @@
                             android:textSize="14sp"
                             android:gravity="center"/>
                         <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/nrHijos"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
                             android:gravity="center"
                             android:hint="@string/_0" />
                     </LinearLayout>
@@ -237,7 +240,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/loginButton"
+        android:id="@+id/calcButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/btnTextCalc"

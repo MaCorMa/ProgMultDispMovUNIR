@@ -26,4 +26,39 @@
     <string name="txttendr_s_pagas_extras_de">Tendrás pagas extras de:</string>
     <string name="netomensual">999999999€</string>
     <string name="txttu_sueldo_neto_mensual_ser_a_de">Tu sueldo neto mensual sería de:</string>
+    <string name="txtgrupo_profesional">Grupo Profesional</string>
+
+    <!--spinners-->
+    <!--Pagas-->
+    <string-array name="aryPagas">
+        <item>12</item>
+        <item>14</item>
+    </string-array>
+    <!--Grado Profesional-->
+    <string-array name="arygrProf">
+        <item>Grupo 1: Ingenieros, licenciados y personal de alta dirección.</item>
+        <item>Grupo 2: Ingenieros técnicos, Peritos y Ayudantes titulados.</item>
+        <item>Grupo 3: Jefes Administrativos y de Taller.</item>
+        <item>Grupo 4: Ayudantes sin titulación.</item>
+        <item>Grupo 5: Oficiales administrativos.</item>
+        <item>Grupo 6: Subalternos.</item>
+        <item>Grupo 7: Auxiliares administrativos.</item>
+        <item>Grupo 8: Oficiales de primera y segunda.</item>
+        <item>Grupo 9: Oficiales de tercera y especialistas.</item>
+        <item>Grupo 10: Peones.</item>
+        <item>Grupo 11: Trabajadores menores de 18 años.</item>
+    </string-array>
+    <!--Grado Discapacidad-->
+    <string-array name="aryDisc">
+        <item>Sin discapacidad</item>
+        <item>Menor que 65%</item>
+        <item>Mayor que 65%</item>
+    </string-array>
+    <!--Estado civil-->
+    <string-array name="aryEstadoCiv">
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Viudo</item>
+    </string-array>
+
 </resources>

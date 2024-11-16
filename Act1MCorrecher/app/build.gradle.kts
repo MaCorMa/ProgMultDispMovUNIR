@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.act1mcorrecher"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.act1mcorrecher"
