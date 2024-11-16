@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Act1 MCorrecher</string>
+    <string name="appTitle">Calculadora Salario Neto</string>
+    <string name="email">Dirección de Correo</string>
+    <string name="btnTextCalc">Simular</string>
+    <string name="datos_personales">Datos Personales</string>
+    <string name="n_pagas_anuales">Nº Pagas Anuales</string>
+    <string name="hintbruto">25.000€</string>
+    <string name="sueldo_bruto_anual">Sueldo Bruto Anual</string>
+    <string name="edad">Edad</string>
+    <string name="_20">20</string>
+    <string name="grado_de_discapacidad">Grado de discapacidad</string>
+    <string name="estado_civil">Estado Civil</string>
+    <string name="_0">0</string>
+    <string name="n_mero_de_hijos">Número de Hijos</string>
+    <string name="btnrepetir_simulaci_n">Repetir Simulación</string>
+    <string name="ssanual">ssAnual€</string>
+    <string name="txtcuotas_a_la_ss_anuales">Cuotas a la SS anuales:</string>
+    <string name="tipoanual">99%</string>
+    <string name="txttipo_de_retenci_n">Tipo de Retención:</string>
+    <string name="irpfanual">999999999€</string>
+    <string name="txtretenci_n_anual_de_irpf">Retención anual de IRPF:</string>
+    <string name="netoanual">999999999€</string>
+    <string name="txtequivalente_a">Equivalente a:</string>
+    <string name="pagasanual">999999999€</string>
+    <string name="txttendr_s_pagas_extras_de">Tendrás pagas extras de:</string>
+    <string name="netomensual">999999999€</string>
+    <string name="txttu_sueldo_neto_mensual_ser_a_de">Tu sueldo neto mensual sería de:</string>
+</resources>
