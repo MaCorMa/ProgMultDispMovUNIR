@@ -1,5 +1,6 @@
 package com.example.imcapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -36,6 +37,13 @@ class MainActivity : AppCompatActivity() {
     private var currentWeight : Int = 45
     private var currentAge : Int = 23
     private var currentHeight : Double = 1.7
+
+
+    //Creacion de un companion object accesible desde todas las activities
+    companion object{
+        const val IMC_KEY = ("IMC_RESULT")
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -96,16 +104,25 @@ class MainActivity : AppCompatActivity() {
         }
         this.btnImcCalculator.setOnClickListener{
             val resultIMC = calculateIMC()
-
             //navegación
+            navigateToResult(resultIMC)
         }
+    }
+
+    private fun navigateToResult(resultIMC: Double) {
+        //creamos el objeto intent
+        val intent = Intent(this, ResultIMCActivity::class.java)
+        //añadir el extra para pasar el resultIMC
+        intent.putExtra(IMC_KEY, resultIMC)
+        this.startActivity(intent)
     }
 
     private fun calculateIMC(): Double {
         val imc = this.currentWeight/(this.currentHeight + this.currentHeight)
-
-        Log.i("IMC", "El imc es $imc")
-        return imc
+        val df = DecimalFormat("#,##")
+        val result = df.format(imc).toDouble()
+        Log.i("IMC", "El imc es $result")
+        return result
     }
 
     private fun setAge() {
