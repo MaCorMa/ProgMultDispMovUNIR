@@ -5,16 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultIMCActivity"
-
-    android:background="@color/background_app"
+    tools:context=".MainActivity"
+    android:background="@color/black"
     android:padding="32dp">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/result_title"
+        android:text="@string/login"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -22,15 +21,15 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvResults"
+        android:id="@+id/cvLogin"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginVertical="32dp"
-        app:cardBackgroundColor="@color/background_component"
+        app:cardBackgroundColor="@color/cardview_dark_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-        app:layout_constraintBottom_toTopOf="@id/btnCalc"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:cardCornerRadius="16dp">
 
         <LinearLayout
@@ -38,37 +37,53 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center"
+            android:gravity="left"
             android:layout_margin="16dp">
 
             <TextView
-                android:id="@+id/tvResult"
+                android:id="@+id/tvUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="26sp"
+                android:textSize="30sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                tools:text="Normal" />
+                tools:text="Nombre de Usuario"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etUser"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="12dp"/>
+
             <TextView
-                android:id="@+id/tvIMC"
+                android:id="@+id/tvPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="70sp"
-                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                tools:text="Normal"/>
+                tools:text="Contraseña"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="12dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/btnCalc"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cvResults"
-        android:text="@string/recalcular_imc"/>
-
-
+        app:layout_constraintTop_toBottomOf="@id/cvLogin"
+        android:text="@string/login"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
