@@ -7,7 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-
+import com.example.act1mcorrecher.MainActivity.
 class Resultados : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +18,7 @@ class Resultados : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        /*
         //Recoger valores de la view anterior
         val brutoAnual = intent.extras?.getDouble("brutoAnual")
         val nrPagas = intent.extras?.getString("nrPagas")?.toInt()
@@ -139,8 +140,8 @@ class Resultados : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             //Iniciar la siguiente activity
             startActivity(intent)
-        }
+        }*/
     }
-
+      val result = intent.extras?.getDouble(brutoAnual);
 
 }
