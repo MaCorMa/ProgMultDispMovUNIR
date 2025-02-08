@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.ejemploretrofitclase"
+    namespace = "com.example.actividad2_manuelcorrecher"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.ejemploretrofitclase"
+        applicationId = "com.example.actividad2_manuelcorrecher"
         minSdk = 29
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -26,6 +26,11 @@ android {
             )
         }
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -33,11 +38,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
-    buildFeatures{
-        viewBinding= true
-    }
-
 }
 
 dependencies {
@@ -47,6 +47,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
@@ -54,8 +57,5 @@ dependencies {
 
     implementation ("com.squareup.picasso:picasso:2.71828")
 
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    implementation(kotlin("script-runtime"))
+
 }
